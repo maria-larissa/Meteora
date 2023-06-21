@@ -1,0 +1,28 @@
+.secoes{
+    padding: 1rem;
+}
+
+.categorias{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fotos-categoria{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.foto-categoria{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-categoria figcaption{
+    background-color: black;
+    color: white;
+}

@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    background-color: #F3F6F7;
-    color: #212529;
+    
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;
+}
+
+body{
+    background-color: #F3F6F7;
+    color: #212529;
 }
 
 
@@ -108,16 +109,6 @@ header{
 
 /* Banner novidades */
 
-
-/* .banner{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-} */
-
 .banner-novidades{
     height: 415px;
     display: flex;
@@ -129,10 +120,6 @@ header{
     position: relative;
 }
 
-
-
-
-/* carrossel */
 @keyframes display {
     0% {
         transform: translateX(20%);
