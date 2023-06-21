@@ -20,7 +20,6 @@ header{
     display: flex;
     flex-direction: column;
 }
-
 .header-principal{
     color: #ffffff;
     background-color: #000000;
@@ -35,7 +34,7 @@ header{
 }
 
 
-/* Menu mobile / Menu */
+/* Menu mobile*/
 .menu-mobile{
     background-color: #343A40;
     text-decoration: none;
@@ -53,35 +52,28 @@ header{
     display: none;
 
 }
-
 .menu-mobile ul li{
     list-style: none;
     margin: 0.2rem 0;
 }   
-
 .menu-mobile a{
     color: #ffffff;
     text-decoration: none;
 }
-
 .menu-mobile a:hover, .menu-mobile a:active{
     color: #DAFF01;
 }
-
 #btn-fechar-menu{
     display: none;
     cursor: pointer;
     color: #DAFF01;
 }
-
 #btn-abrir-menu{
     cursor: pointer;
 }
-
 .menu{
     display: none;
 }
-
 .caixa-pesquisa{
     display: flex;
     align-items: center;
@@ -90,7 +82,6 @@ header{
     
     margin: 2rem 1.5rem;
 }
-
 .caixa-pesquisa form{
     width: 100%;
     display: flex;
@@ -105,7 +96,6 @@ header{
     margin-right: 0.3rem;
     border: 1px solid #000000;
 }
-
 .caixa-pesquisa form button{
     background-color: #ffffff;
     padding: 0.4rem;
@@ -114,38 +104,99 @@ header{
     font-weight: bolder;
 }
 
+
+
+/* Banner novidades */
+
+
+/* .banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+} */
+
+.banner-novidades{
+    height: 415px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    position: relative;
+}
+
+
+
+
+/* carrossel */
+@keyframes display {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    10% {
+  transform: translateX(0);
+  opacity: 1;
+}
+20% {
+  transform: translateX(0);
+  opacity: 1;
+}
+30% {
+    transform: translateX(-5%);
+    opacity: 0;
+}
+100% {
+  transform: translateX(-20%);
+  opacity: 0;
+}
+}
+
+.banner-novidades > .pic{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: display 15s infinite;
+}
+
+.pic:nth-child(2) {
+    animation-delay: 5s;
+}
+.pic:nth-child(3) {
+    animation-delay: 10s;
+}
+
+
 @media (min-width: 768px){
 
     #btn-abrir-menu{
         display: none;
     }
-
     .menu{
         color: #ffffff;
         display: flex;
     }
-
     .menu ul{
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     .menu ul li{
         list-style: none;
         margin: 0 1rem;
     }
-
     .menu a{
         color: #ffffff;
         text-decoration: none;
     }
-
     .menu a:hover, .menu a:active{
         color: #DAFF01;
     }
-     
     header{
         flex-direction: row;
         justify-content: space-between;
@@ -174,5 +225,16 @@ header{
     .caixa-pesquisa form input{
         width: 70%;
     }
+
+    .banner-foto img{
+        max-width: 20%;
+    }
    
+}
+
+@media (min-width: 1200px) {
+    header{
+        font-size: 16px;
+    }
+    
 }
