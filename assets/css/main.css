@@ -1,0 +1,96 @@
+.sessoes{
+    padding: 1rem 0;
+}
+
+.sessoes > h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.categorias{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fotos-categoria{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.foto-categoria{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-categoria figcaption{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+.produtos{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:start;
+    justify-content: space-around;
+    /* text-align: center; */
+    text-align: justify;
+}
+
+
+.produto{
+    width: 325px;
+    margin-top: 1.5rem;
+    border: 0.5px solid #E0E0E0;
+}
+.produto picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto .descricao{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.descricao p{
+    font-size: 14px;
+}
+.descricao h5{
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+}
+
+
+.preco{
+    font-weight: 900;
+    line-height: 50px;
+    margin-top: 0.5rem;
+}
+
+.btn-vermais{
+    width: 120px;
+    line-height: 35px;
+    display: block;
+    text-align: center;
+    background-color: #9353FF;
+}
+
+.btn-vermais a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
