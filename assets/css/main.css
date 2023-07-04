@@ -1,12 +1,15 @@
+
+
 .sessoes{
     padding: 1rem 0;
 }
 
-.sessoes > h3{
+.sessoes  h3{
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
 }
+
 .categorias{
     margin: 0 auto;
     display: flex;
@@ -49,12 +52,12 @@
     text-align: justify;
 }
 
-
 .produto{
     width: 323px;
     margin-top: 1.5rem;
     border: 0.5px solid #E0E0E0;
 }
+
 .produto picture {
     display: flex;
     flex-direction: column;
@@ -68,12 +71,12 @@
 .descricao p{
     font-size: 14px;
 }
+
 .descricao h5{
     font-weight: 600;
     line-height: 30px;
     margin-bottom: 0.5rem;
 }
-
 
 .preco{
     font-weight: 900;
@@ -95,11 +98,131 @@
     cursor: pointer;
 }
 
+
+
+
+.facilidades{
+    background-color: black;
+    color:white;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formas-pagamento{
+    width: 90%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-pagamento picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    white-space: normal;
+}
+
+.form-pagamento figcaption{
+    margin-left: 2rem;
+    width: 50%;
+}
+
+.form-pagamento h5{
+    color: #DAFF01;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.form-pagamento p{
+    font-size: 0.8rem;
+}
+
+
+
+.caixa-novidades{
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.novidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-cadastro{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.caixa-cadastro input{
+    line-height: 30px;
+    padding-left: 1rem;
+    color: #6C757D;
+    border: 1px solid black;
+    border-right: 0;
+    width: 80%;
+}
+
+.caixa-cadastro button{
+    color: white;
+    background-color: #9353FF;
+    border: none;
+    padding: 0 0.5rem;
+}
+
+
+
+
+
+
 @media (min-width: 768px) {
     .produto{
         width: 330px;
     }
+
+
+    .formas-pagamento{
+        width: 50%;
+    }
+
+
+    .novidades{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .caixa-cadastro{
+        width: 70%;
+    }
     
+}
+
+@media (min-width:1200px) {
+    .formas-pagamento{
+        justify-content: center;
+        width: 90%;
+    }
+
+    .form-pagamento{
+        width: calc(100% / 3);
+    }
+
+
+    .caixa-novidades{
+        width: 50%;
+    }
 }
 
 @media (min-width: 1400px) {

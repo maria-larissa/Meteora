@@ -12,7 +12,8 @@
 }
 
 body{
-    background-color: #F3F6F7;
+    /* background-color: #F3F6F7; */
+    background-color: white;
     color: #212529;
 }
 
@@ -116,13 +117,12 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
     position: relative;
 }
 
 @keyframes display {
     0% {
-        transform: translateX(20%);
+        transform: translateX(10%);
         opacity: 0;
     }
     10% {
@@ -138,7 +138,7 @@ header{
     opacity: 0;
 }
 100% {
-  transform: translateX(-20%);
+  transform: translateX(-10%);
   opacity: 0;
 }
 }
@@ -157,6 +157,24 @@ header{
     animation-delay: 10s;
 }
 
+
+
+
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem-footer{
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+
+}
 
 @media (min-width: 768px){
 
